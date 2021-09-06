@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Management System</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body class="p-3 ">
+        <form name ="Student" method ="POST" action="studentdbs.php">
+
+            <div class ="container">
+            <div class ="row">
+
+            <div class ="col-sm-4">
+            <h2 class="bg-secondary font-weight-bold text-white"><b> Course Information</b></h2> 
+            <hr class="nb-3"> 
+            
+            <table border=20 class="btn-secondary display-5 font-weight-bold">
+            <tr><td>Course ID:</td><td><select name = "courseid" id="iCourseid" style = "width: 200px; margin: 2px ;
+             text-align:right">   
+           
+            <option Value = "space"></option>
+            <option Value = "STEM">STEM04954</option>
+            <option Value = "Legal Studies">LS905865</option>
+            <option Value = "medical Science">Med290045</option>
+            <option Value = "Education">Edu390045</option>
+            <option Value = "Business">Bus490045</option>
+            <option Value = "Management">Man590045</option>
+            </select>
+            </td></tr>
+
+            <tr><td>Faculty:</td><td><select name = "faculty" id="iFaculty" style = "width: 200px; margin: 2px;
+                text-align:right">   
+              
+               <option Value = "space"></option>
+               <option Value = "STEM">Science Technology Engineering & Maths</option>
+               <option Value = "Legal Studies">Law School</option>
+               <option Value = "medical Science">Medical School</option>
+               <option Value = "Hospitality">Social Science</option>
+                </select>
+                </td></tr>
+
+                <tr><td>School:</td><td><select name = "school" id="iSchool" style = "width: 200px; margin: 2px;
+                    text-align:right">   
+                  
+                   <option Value = "space"></option>
+                   <option Value = "BIS">Business Information</option>
+                   <option Value = "ComputerScience">Computer Science</option>
+                   <option Value = "Maths">Maths</option>
+                   <option Value = "SoftwareEng">Software Engineering</option>
+                   <option value ="Games">Computer Games</option>
+                    </select>
+                    </td></tr>
+    
+                    <tr><td>Attendence:</td><td><select name = "attendence" id="iAttendence" style = "width: 200px; margin: 2px;
+                        text-align:right">   
+                      
+                    <option Value = "space"></option>
+                    <option Value = "Fulltime">Full Time</option>
+                    <option Value = "Parttime">Part Tiime</option>
+                    <option Value = "Distance">Distance</option>
+                    <option Value = "Sandwitch">Sandwich program</option>
+                     </select>
+                     </td></tr>
+
+                     <tr><td>Academic-Year:</td><td><select name = "academic" id="iAcademic" style = "width: 200px; margin: 2px;
+                        text-align:right">   
+                      
+                     <option Value = "space"></option>
+                     <option Value = "2018 - 1019">2018 - 2019</option>
+                     <option Value = "2019 - 2020">2019 - 2020</option>
+                     <option Value = "2020 - 2021">2020 - 2021</option>
+                     <option Value = "2021 - 2022">2021 - 2022</option>
+                      </select>
+                      </td></tr>
+
+                      <tr><td>Year Level:</td><td><select name = "yearlevel" id="iYearlevel" style = "width: 200px; 
+                        text-align:right">   
+                      
+                      <option Value = "space"></option>
+                      <option Value = "zero">Year 0</option>
+                      <option Value = "parttime">Year 1</option>
+                      <option Value = "distance">Year 2</option>
+                      <option Value = "sandwich">Year 3</option>
+                      <option value = "sandwich">Year 4</option>
+                      <option value = "sandwich">Year 5</option>
+                       </select>
+                       </td></tr>
+                       </table>
+                       <br>
+
+             <table border=20 class="btn-secondary display-5 font-weight-bold">
+
+             <tr><td>Course Tutor:</td><td><input type="text" name = "tutor" id= "iTutor"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+
+             <tr><td>Course_Code:</td><td><input type="text" name = "coursecode" id= "iCoursecode"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+
+            <tr><td>Course_Title:</td><td><input type="text" name = "coursetitle" id= "iCoursetitle"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+
+            <tr><td>Undergraduate:</td><td><input type="text" name = "undergraduate" id= "iUndergraduate"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+
+            <tr><td>Postgraduate:</td><td><input type="text" name = "postgraduate" id= "iPostgraduate"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+
+             <tr><td>Research:</td><td><input type="text" name = "research" id= "iResearch"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+            </table>
+            </br>
+            </div>
+            <div class="col-sm-4">
+                <h2 class=" bg-secondary font-weight-bold text-white"><b>Student Details</b></h2> 
+            <hr class="mb-3"> 
+                <table border=20 class="btn-secondary display-5 font-weight-bold">
+
+            <tr><td>Student_ID:</td><td><input type="text" name = "StudentID" id="playerxid" 
+            style="width: 200px; text-align:right" value = "" ></td></tr> 
+
+            <tr><td>Title:</td><td><input type="text" name = "TitleID" id="ititle" 
+                style="width: 200px; text-align:right" value = "" ></td></tr>   
+               
+            
+
+            <tr><td>Firstname:</td><td>  <input type="text" name = "firstname" id="ifirstname"
+            placeholder = "firstname" style="width: 200px; text-align:right" value = "" required></td></tr>
+
+            <tr><td>Surname:</td><td><input type="text" name = "surname" 
+            id="isurname" placeholder = "surname" style="width: 200px; text-align:right" value = "" required></td></tr>
+                
+            <tr><td>Date_of_Birth:</td><td><input type="text" name = "dateofbirth" id="idob"
+            style="width: 200px; text-align:right" value = "" required></td></tr>
+
+            <tr><td>Gender:</td><td> <input type="radio" name = "gender" id="gender" value="m" >Male
+                                <input type="radio" name="gender" value = "f" >Female</td></tr>
+        </table>
+    <br>
+
+                <table border=20 class="btn-secondary display-5 font-weight-bold">
+
+            <tr><td>Address:</td><td><input type="text" name = "Address" id= "iAddress"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+       
+            <tr><td>Email:</td><td><input type="text" name = "email" id= "iEmail"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+       
+            <tr><td>Telephone:</td><td><input type="text" name = "telephone" id= "itelephone"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+       
+            <tr><td>Mobile:</td><td><input type="text" name = "mobile" id= "imobile"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+       
+            <tr><td>Emeg_contact:</td><td><input type="text" name = "econtact" id= "icontact"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+
+            <tr><td>Relationship:</td><td><input type="text" name = "relationship" id= "irelationship"
+            style="width: 200px; text-align :right" value = "" ></td></tr>
+        </table>
+    </br>
+            </div>
+
+     <div class ="col-sm-4">
+        <h2 class=" bg-secondary font-weight-bold text-white"><b>Qualification Grades</b></h2> 
+    <hr class="mb-3"> 
+        <table border=20 class="btn-secondary display-5 font-weight-bold">
+
+    <tr><td>Games:</td><td><input type="text" name = "games" id= "iGames"
+    style="width: 200px; text-align:right" value = "" ></td></tr>
+                  
+    <tr><td>Animation:</td><td><input type="text" name = "animation" id= "iAnimation"
+    style="width: 20; text-align:right" value = ""></td></tr>
+                  
+    <tr><td>IT Business:</td><td><input type="text" name = "business" id= "iBusiness"
+    style="width: 200px; text-align:right" value = "" ></td></tr>
+                  
+    <tr><td>Software Testing:</td><td><input type="text" name = "softwaretesting" id= "iSoftware"
+    style="width: 200px; text-align:right" value = "" ></td></tr>
+                  
+    <tr><td>Object Oriented:</td><td><input type="text" name = "objectoriented" id= "iObject"
+    style="width: 200px; text-align:right" value = "" ></td></tr>
+           
+    <tr><td>Computer_System:</td><td><input type="text" name = "computersystem" id= "iComputer"
+    style="width: 200px; text-align:right" value = "" ></td></tr>
+    </table>
+<br>
+           
+    
+<table border=20 class="btn-secondary display-5 font-weight-bold">
+
+<tr><td>Project x 2:</td><td><input type="text" name = "project" id= "iProject"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+   
+             <tr><td>Total Score:</td><td><input type="text" name = "totalscore" id= "iTotalscore"
+             style="width: 20; text-align :right" value = "" ></td></tr>
+   
+             <tr><td>Overall Average:</td><td><input type="text" name = "average" id= "iAverage"
+             style="width: 200px; text-align :right" value = ""  ></td></tr>
+   
+             <tr><td>Classification:</td><td><input type="text" name = "classify" id= "iClassify"
+             style="width: 200px; text-align :right" value = "" ></td></tr>
+
+             <tr><td>
+                 <input type ="button"  value="Reset" onClick ="btnclear()"
+                 style ="width:100px; height:54px; font-size:60; border-radius:8px " class="btn-secondary"/></td>
+
+                <td><input type ="submit"  value="Academic Grade" onClick ="btnResult()"
+                 style ="width:200px; height:54px;  border-radius:8px " class="btn-secondary"/></td></tr>
+            </table>
+        </br>
+                    </div>
+                </div>
+            </div><center>
+                <h3 class="display-5 font-weight-bold text-white bg-secondary">Student Management System</h1></center>
+
+            <SCRIPT>
+            function btnResult()
+            {
+                var ul = parseInt(document.getElementById("iGames").value);
+                var u2 = parseInt(document.getElementById("iAnimation").value);
+                var u3 = parseInt(document.getElementById("iBusiness").value);
+                var u4 = parseInt(document.getElementById("iSoftware").value);
+                var u5 = parseInt(document.getElementById("iObject").value);
+                var u6 = parseInt(document.getElementById("iComputer").value);
+                var u7 = parseInt(document.getElementById("iProject").value);
+                
+
+                var checktotal = u1 + u2 + u3 + u4 + u5 + u6 + (u7 * 2);
+
+                if ( checktotal > 800)
+                {
+                    alert("Total mark entered is invalid");
+                    document.Student.games.value="";
+                    document.Student.animation.value="";
+                    document.Student.business.value="";
+                    document.Student.softwaretesting.value="";
+                    document.Student.objectoriented.value="";
+                    document.Student.computersystem.value="";
+                    document.Student.project.value="";
+                    document.Student.totalscore.value="";
+                    document.Student.average.value="";
+                    document.Student.classify.value="";
+                   
+                }
+                else
+                {
+                    document.Student.iTotalscore.value = checktotal;
+                    document.Student.iTotalscore.value = checktotal /8;
+
+
+                }
+
+                if (Average <= 20)
+                {
+                    document.Student,iClassify.value=("Fail");
+                }
+
+                if (Average <= 30)
+                {
+                    document.Student,iClassify.value=("CoHE");
+                }
+
+                if (Average <= 45)
+                {
+                    document.Student,iClassify.value=("3rd Class");
+                }
+
+                if (Average >= 60)
+                {
+                    document.Student,iClassify.value=("2.ii Class Lower");
+                }
+
+                if (Average >= 79)
+                {
+                    document.Student,iClassify.value=("2.i Class Upper");
+                }
+
+                if (Average >= 80)
+                {
+                    document.Student,iClassify.value=("1st Class");
+                }
+
+
+
+
+            }
+            
+
+            function btnclear()
+            {
+
+            }
+
+            </SCRIPT>    
+
+        </form>
+    </body>
+</html>
